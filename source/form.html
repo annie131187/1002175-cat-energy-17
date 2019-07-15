@@ -33,69 +33,69 @@
       <p class="page-main__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
 
       <form action="https://echo.htmlacademy.ru" method="post">
-        <fieldset>
-          <label for="cat-name">Имя:*
-            <input type="text" id="cat-name" placeholder="Барсик" required>
+        <fieldset class="form">
+          <label>Имя:*
+            <input class="form__field" type="text" name="cat-name" placeholder="Барсик" required>
           </label>
-          <label for="cat-weight">Вес (кг):*
-            <input type="text" id="cat-weight" placeholder="7" required>
+          <label>Вес (кг):*
+            <input class="form__field" type="text" name="cat-weight" placeholder="7" required>
           </label>
-          <label for="cat-age">Возраст (лет):
-            <input type="text" id="cat-age" placeholder="7">
+          <label>Возраст (лет):
+            <input class="form__field" type="text" name="cat-age" placeholder="7">
           </label>
         </fieldset>
 
-        <fieldset>
-          <label for="weight-loss">
-            <input type="radio" id="weight-loss" value="Похудение" checked>
+        <fieldset class="form">
+          <label>
+            <input class="form__radio" type="radio" name="program" value="weight-loss" checked>
             Похудение
           </label>
-          <label for="mass-gain">
-            <input type="radio" id="mass-gain" value="Набор массы">
+          <label>
+            <input class="form__radio" type="radio" name="program" value="mass-gain">
             Набор массы
           </label>
-          <label for="need-advice">
-            <input type="radio" id="need-advice" value="Не знаю (нужен ваш совет)">
+          <label>
+            <input class="form__radio" type="radio" name="program" value="need-advice">
             Не знаю (нужен ваш совет)
           </label>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="form">
           <legend>Контактные данные (владельца кота)</legend>
-          <label for="user-email"> e-mail:*
-            <input type="email" name="email" id="user-email" placeholder="kuklachev@gmail.com" required>
+          <label> e-mail:*
+            <input class="form__field form__field--email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
           </label>
-          <label for="user-phone">Телефон:*
-            <input type="tel" name="phone" id="user-phone" placeholder="8 (960) 900-60-90" required>
+          <label>Телефон:*
+            <input class="form__field form__field--phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
           </label>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="form">
           <legend>Комментарий</legend>
-          <textarea name="comments" id="user-comments" rows="10" cols="100" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <textarea class="form-field" name="comments" rows="10" cols="100" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="form">
           <legend>Дополнительно</legend>
-          <label for="sweetener">
-            <input type="checkbox" id="sweetener" checked>
+          <label>
+            <input class="form__checkbox" type="checkbox" name="extra" value="sweetener" checked>
             Сахарозаменитель
           </label>
-          <label for="water">
-            <input type="checkbox" id="water">
+          <label>
+            <input class="form__checkbox" type="checkbox" name="extra" value="water">
             Питьевая вода
           </label>
-          <label for="milk">
-            <input type="checkbox" id="milk">
+          <label>
+            <input class="form__checkbox" type="checkbox" name="extra" value="milk">
             Молоко
           </label>
-          <label for="vitamins">
-            <input type="checkbox" id="vitamins">
+          <label>
+            <input class="form__checkbox" type="checkbox" name="extra" value="vitamins">
             Витамины
           </label>
         </fieldset>
 
-        <input type="submit" value="Отправить заявку">
+        <button class="form-button button" type="submit" value="Отправить заявку">
         <p class="form-hint">*-Обязательные поля</p>
       </form>
     </main>
@@ -103,7 +103,7 @@
     <footer class="page-footer">
       <div class="page-footer__contacts contacts">
         <b class="contacts__text">Приглашаем к сотрудничеству дилеров!</b>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
       <a class="page-footer_map" href="#">
         <img src="#" width="320" height="400" alt="Адрес магазина: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
