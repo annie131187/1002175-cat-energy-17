@@ -1,0 +1,21 @@
+.catalog__list {
+  @include liststyle;
+}
+
+.catalog__title {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.catalog__title a {
+  color: $black;
+  text-decoration: none;
+}
+
+.catalog__item-features {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $black-lighten;
+}

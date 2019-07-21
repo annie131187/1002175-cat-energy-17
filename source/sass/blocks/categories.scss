@@ -1,0 +1,26 @@
+.categories__list {
+  @include liststyle;
+}
+
+.categories__item {
+  background-color: #f2f2f2;
+}
+
+.categories__title {
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.categories__description {
+  font-size: 14px;
+  line-height: 18px;
+  color: $black-lighten;
+  font-family: Arial, sans-serif;
+}
+
+.categories__button {
+  color: #111111;
+  text-decoration: none;
+  text-transform: uppercase;
+}

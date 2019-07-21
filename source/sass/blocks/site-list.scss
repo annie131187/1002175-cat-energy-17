@@ -1,0 +1,10 @@
+.site-list {
+  @include liststyle;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.site-list a {
+  color: $black;
+  text-decoration: none;
+}

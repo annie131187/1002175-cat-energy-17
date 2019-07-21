@@ -1,0 +1,9 @@
+.social__list {
+  @include liststyle;
+}
+
+.social__link {
+  color: $black-lightest;
+  text-decoration: none;
+
+}

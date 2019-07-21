@@ -1,0 +1,33 @@
+.example {
+  background-color: $grey-bg;
+}
+
+.example__title {
+  font-size: 36px;
+  line-height: 60px;
+}
+
+.example__text {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.example__resources-value {
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  border: 1px solid $grey-border;
+  border-radius: 3px;
+}
+
+.example__resources-description {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.example__resources-cost {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,13 @@
+.slider__list {
+ @include liststyle;
+}
+
+.slider__item {
+  height: 232px;
+  &--before {
+    background: url("../../img/before-mobile@1x.png") no-repeat;
+  }
+  &--after {
+    background: url("../../img/after-mobile@1x.png") no-repeat;
+  }
+}

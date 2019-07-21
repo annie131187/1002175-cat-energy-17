@@ -1,0 +1,12 @@
+.advanteges__title {
+  font-size: 36px;
+  line-height: 60px;
+}
+
+.advanteges__list {
+  @include liststyle;
+  font-size: 14px;
+  line-height: 18px;
+  color: $black-lighten;
+  font-family: Arial, sans-serif;
+}
