@@ -12,6 +12,7 @@
 
 .form__field {
   border: 1px solid $grey-border;
+
   &::placeholder {
     color: $black-lighten;
     text-transform: uppercase;
