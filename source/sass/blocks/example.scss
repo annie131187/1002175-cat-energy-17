@@ -5,6 +5,7 @@
 .example__title {
   font-size: 36px;
   line-height: 60px;
+  font-weight: 400;
 }
 
 .example__text {
@@ -24,6 +25,7 @@
 .example__resources-description {
   font-size: 12px;
   line-height: 12px;
+  color: $black-lighten;
 }
 
 .example__resources-cost {
