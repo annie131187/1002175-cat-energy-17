@@ -1,0 +1,16 @@
+.page-header {
+  position: relative;
+  font-size: 20px;
+  line-height: 20px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 100px;
+    left: 0;
+    height: 305px;
+    width: 320px;
+    background: $leaf url("../../img/index-background-mobile@1x.jpg") no-repeat;
+    z-index: -1;
+  }
+}

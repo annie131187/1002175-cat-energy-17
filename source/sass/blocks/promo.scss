@@ -1,0 +1,22 @@
+.promo {
+  color: $white;
+  font-weight: 400;
+  background-color: transparent;
+}
+
+.promo__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.promo__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.promo__image {
+  width: 280px;
+  height: 270px;
+}
