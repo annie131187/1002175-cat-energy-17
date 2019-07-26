@@ -1,17 +1,17 @@
 .page-header {
-  position: relative;
   display: flex;
-  flex-direction: column;
-  // align-items: center;
+  justify-content: space-between;
+  position: relative;
+  min-height: 65px;
   font-size: 20px;
   line-height: 20px;
 
   &::after {
     content: "";
     position: absolute;
-    top: 100px;
+    top: 150px;
     left: 0;
-    width: auto;
+    width: 100%;
     height: 305px;
     background: $leaf url("../../img/index-background-mobile@1x.jpg") no-repeat;
     z-index: -1;
@@ -29,7 +29,11 @@
 
 @media (min-width: 768px) {
   .page-header {
-    flex-direction: row;
+    min-height: 83px;
+
+    &::after {
+      display: none;
+    }
   }
 
   .page-header__logo {
@@ -39,7 +43,11 @@
 
 @media (min-width: 1440px) {
   .page-header {
-    flex-direction: row;
+    min-height: 113px;
+
+    &::after {
+      display: block;
+    }
   }
 
   .page-header__logo {

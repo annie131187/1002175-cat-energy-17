@@ -1,3 +1,33 @@
 .page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: $grey-bg;
+}
+
+.page-footer__contacts {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.page-footer__map {
+  width: 100%;
+}
+
+.page-footer_map-image {
+  width: 320px;
+  height: 400px;
+}
+
+@media (min-width: 768px) {
+  .page-footer__wrapper {
+    flex-direction: row;
+  }
+
+  .page-footer__logo,
+  .page-footer__social,
+  .page-footer__copyright {
+    width: 30%;
+  }
 }

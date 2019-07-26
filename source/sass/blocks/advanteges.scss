@@ -1,3 +1,8 @@
+.advanteges {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .advanteges__title {
   font-size: 36px;
   line-height: 60px;
@@ -10,4 +15,35 @@
   line-height: 18px;
   color: $black-lighten;
   font-family: "Arial", sans-serif;
+}
+
+.advanteges__item {
+  margin-bottom: 20px;
+}
+
+
+@media (min-width: 768px) {
+  .advanteges {
+    padding: 0 30px;
+  }
+
+  .advanteges__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .advanteges__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .advanteges {
+    padding: 0 110px;
+  }
+
+  .advanteges__item {
+    width: 25%;
+  }
 }
