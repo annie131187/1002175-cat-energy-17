@@ -1,6 +1,6 @@
 .categories {
   margin: 0 auto;
-  padding: 0 20px;
+  padding: $mobile-padding;
 }
 
 .categories__list {
@@ -32,9 +32,9 @@
   text-transform: uppercase;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .categories {
-    padding: 0 30px;
+    padding: $tablet-padding;
   }
 
   .categories__item {
@@ -42,9 +42,9 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktop-width) {
   .categories {
-    padding: 0 109px;
+    padding: $desktop-padding;
   }
 
   .categories__list {

@@ -1,11 +1,27 @@
 .page-main__title {
+  padding: $mobile-padding;
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
 }
 
 .page-main__text {
+  padding: $mobile-padding;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__title,
+  .page-main__text {
+    padding: $tablet-padding;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__title,
+  .page-main__text {
+    padding: $desktop-padding;
+  }
 }

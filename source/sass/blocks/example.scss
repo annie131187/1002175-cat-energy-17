@@ -1,6 +1,6 @@
 .example {
   background-color: $grey-bg;
-  padding: 0 20px;
+  padding: $mobile-padding;
 }
 
 .example__title {
@@ -35,16 +35,16 @@
   text-transform: uppercase;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .example {
-    padding: 0 30px;
+    padding: $tablet-padding;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktop-width) {
   .example {
     display: flex;
-    padding: 0 110px;
+    padding: $desktop-padding;
   }
 
   .example__columns {

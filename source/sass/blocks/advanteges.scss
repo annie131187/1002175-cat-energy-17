@@ -1,6 +1,6 @@
 .advanteges {
   margin: 0 auto;
-  padding: 0 20px;
+  padding: $mobile-padding;
 }
 
 .advanteges__title {
@@ -22,9 +22,9 @@
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .advanteges {
-    padding: 0 30px;
+    padding: $tablet-padding;
   }
 
   .advanteges__list {
@@ -38,9 +38,9 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktop-width) {
   .advanteges {
-    padding: 0 110px;
+    padding: $desktop-padding;
   }
 
   .advanteges__item {

@@ -1,8 +1,11 @@
 .page-footer__wrapper {
+  background-color: $grey-bg;
+}
+
+.page-footer__bottom {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $grey-bg;
 }
 
 .page-footer__contacts {
@@ -20,14 +23,22 @@
   height: 400px;
 }
 
-@media (min-width: 768px) {
-  .page-footer__wrapper {
+@media (min-width: $tablet-width) {
+  .page-footer__bottom {
     flex-direction: row;
+    justify-content: space-between;
+    padding: $tablet-padding;
   }
 
   .page-footer__logo,
   .page-footer__social,
   .page-footer__copyright {
     width: 30%;
+  }
+}
+
+@media (min-width: $desktop-width){
+  .page-footer__bottom {
+    padding: $desktop-padding;
   }
 }
