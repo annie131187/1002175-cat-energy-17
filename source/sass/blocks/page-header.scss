@@ -1,16 +1,65 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
   position: relative;
+  min-height: 65px;
+  padding: $mobile-padding;
   font-size: 20px;
   line-height: 20px;
+}
 
+.page-header--bg {
   &::after {
-    position: absolute;
     content: "";
-    top: 100px;
+    position: absolute;
+    top: 150px;
     left: 0;
+    width: 100%;
     height: 305px;
-    width: 320px;
     background: $leaf url("../../img/index-background-mobile@1x.jpg") no-repeat;
     z-index: -1;
+  }
+}
+
+.page-header__logo {
+  width: 85%;
+  height: 39px;
+}
+
+.page-header-logo__image {
+  width: 191px;
+  height: 39px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    flex-direction: row;
+    padding: $tablet-padding;
+    min-height: 83px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .page-header__logo {
+    width: 40%;
+    height: 59px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    padding: $desktop-padding;
+    min-height: 113px;
+
+    &::after {
+      display: block;
+    }
+  }
+
+  .page-header__logo {
+    width: 50%;
+    height: 60px;
   }
 }

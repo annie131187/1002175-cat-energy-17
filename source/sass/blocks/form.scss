@@ -1,3 +1,15 @@
+.form {
+  padding: $mobile-padding;
+}
+
+.form__group {
+  border: none;
+}
+
+.form__item {
+  width: 100%;
+}
+
 .form__label {
   font-size: 16px;
   line-height: 18px;
@@ -26,7 +38,24 @@
 }
 
 .form__button {
+  width: 100%;
   border: none;
 
   cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    padding: $tablet-padding;
+  }
+
+  .form__button {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    padding: $desktop-padding;
+  }
 }

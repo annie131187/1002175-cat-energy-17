@@ -2,11 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Cat Energy</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--bg">
       <a class="page-header__logo">
         <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип сайта Cat Energy">
       </a>
@@ -74,30 +75,34 @@
       </section>
 
       <section class="example">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-        <table class="example__resources">
-          <tr>
-            <td class="example__resources-value">5 кг</td>
-            <td class="example__resources-value">60 дней</td>
-          </tr>
-          <tr>
-            <td class="example__resources-description">снижение веса</td>
-            <td class="example__resources-description">затрачено времени</td>
-          </tr>
-          <tr>
-            <td class="example__resources-cost" colspan="2">Затраты на питание: 15 000 руб.</td>
-          </tr>
-        </table>
-        <div class="example__slider slider">
-          <ul class="slider__list">
-            <li class="slider__item slider__item--before"></li>
-            <li class="slider__item slider__item--after"></li>
-          </ul>
-          <p class="slider__toggles">
-            <button class="slider__toggle" type="button">Было</button>
-            <button class="slider__toggle" type="button">Стало</button>
-          </p>
+        <div class="example__columns">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+          <table class="example__resources">
+            <tr>
+              <td class="example__resources-value">5 кг</td>
+              <td class="example__resources-value">60 дней</td>
+            </tr>
+            <tr>
+              <td class="example__resources-description">снижение веса</td>
+              <td class="example__resources-description">затрачено времени</td>
+            </tr>
+            <tr>
+              <td class="example__resources-cost" colspan="2">Затраты на питание: 15 000 руб.</td>
+            </tr>
+          </table>
+        </div>
+        <div class="example__columns">
+          <div class="example__slider slider">
+            <ul class="slider__list">
+              <li class="slider__item slider__item--before"></li>
+              <li class="slider__item slider__item--after"></li>
+            </ul>
+            <p class="slider__toggles">
+              <button class="slider__toggle" type="button">Было</button>
+              <button class="slider__toggle" type="button">Стало</button>
+            </p>
+          </div>
         </div>
       </section>
     </main>
@@ -108,27 +113,29 @@
         <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
       <a class="page-footer_map" href="#">
-        <img src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Адрес магазина: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        <img class="page-footer_map-image" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Адрес магазина: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
       </a>
       <div class="page-footer__wrapper">
-        <div class="page-footer__logo">
-          <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип сайта Cat Energy">
-        </div>
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Вконтакте</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Инстаграм</a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <div class="page-footer__bottom">
+          <div class="page-footer__logo">
+            <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип сайта Cat Energy">
+          </div>
+          <div class="page-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Вконтакте</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Инстаграм</a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright copyright">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </div>
         </div>
       </div>
     </footer>

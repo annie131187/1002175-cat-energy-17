@@ -1,9 +1,15 @@
+.categories {
+  margin: 0 auto;
+  padding: $mobile-padding;
+}
+
 .categories__list {
   @include liststyle;
 }
 
 .categories__item {
   background-color: #f2f2f2;
+  margin-bottom: 20px;
 }
 
 .categories__title {
@@ -24,4 +30,29 @@
   color: #111111;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .categories {
+    padding: $tablet-padding;
+  }
+
+  .categories__item {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .categories {
+    padding: $desktop-padding;
+  }
+
+  .categories__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .categories__item {
+    width: 570px;
+  }
 }

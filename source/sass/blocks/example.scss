@@ -1,5 +1,6 @@
 .example {
   background-color: $grey-bg;
+  padding: $mobile-padding;
 }
 
 .example__title {
@@ -32,4 +33,21 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    padding: $tablet-padding;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    display: flex;
+    padding: $desktop-padding;
+  }
+
+  .example__columns {
+    width: 50%;
+  }
 }

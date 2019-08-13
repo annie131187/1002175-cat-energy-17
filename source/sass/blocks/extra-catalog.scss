@@ -1,3 +1,7 @@
+.extra-catalog {
+  padding: $mobile-padding;
+}
+
 .extra-catalog__title {
   font-size: 24px;
   line-height: 24px;
@@ -24,4 +28,29 @@
   font-size: 14px;
   line-height: 14px;
   color: $black-lighten;
+}
+
+@media (min-width: $tablet-width) {
+  .extra-catalog {
+    padding: $tablet-padding;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra-catalog {
+    width: 77%;
+    margin-right: 80px;
+    padding: $desktop-padding;
+  }
+
+  .extra-catalog__item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .extra-catalog__item-name,
+  .extra-catalog__item-features,
+  .extra-catalog__button {
+    width: 30%;
+  }
 }
