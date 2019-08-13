@@ -30,17 +30,39 @@
   color: $black-lighten;
 }
 
+.extra-catalog__promo {
+  height: 290px;
+  padding: $mobile-padding;
+  color: $white;
+  font-size: 16px;
+  line-height: 20px;
+  background: $leaf url("../../img/gift-photo-mobile@1x.jpg") no-repeat;
+}
+
 @media (min-width: $tablet-width) {
   .extra-catalog {
+    padding: $tablet-padding;
+  }
+
+  .extra-catalog__promo {
     padding: $tablet-padding;
   }
 }
 
 @media (min-width: $desktop-width) {
   .extra-catalog {
-    width: 77%;
-    margin-right: 80px;
     padding: $desktop-padding;
+  }
+
+  .extra-catalog__columns {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .extra-catalog__list {
+    width: 77%;
+    display: flex;
+    flex-direction: column;
   }
 
   .extra-catalog__item {
@@ -52,5 +74,14 @@
   .extra-catalog__item-features,
   .extra-catalog__button {
     width: 30%;
+  }
+
+  .extra-catalog__promo {
+    width: 17%;
+    padding: 0;
+  }
+
+  .extra-catalog__button {
+    display: block;
   }
 }
